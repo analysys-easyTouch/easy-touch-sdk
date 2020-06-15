@@ -1,0 +1,100 @@
+.analysys-modal-shade {
+  width: 100vw;
+  height:100vh;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background:rgba(0,0,0,0.6);
+  z-index: 1000000;
+  position: fixed;
+}
+.analysya-modal-container {
+  position: relative;
+}
+.analysys-modal-bg {
+  background: #fff;
+  border-radius: 2PX;
+  width: 80vw;
+  height: auto;
+  padding: 2vw 0 0;
+  max-height: 90vh;
+  margin: 4vw;
+}
+.analysys-modal-content {
+  min-height: 92PX;
+  padding: 0 2vw;
+  font-size: 12PX;
+  margin-top: 1vh;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.analysys-modal-content-01 {
+  min-height: 42PX;
+}
+.analysys-modal-text {
+  padding: 0 2vw;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.analysys-modal-image {
+  width: 80vw;
+  height: auto;
+}
+.analysys-modal-close, .analysys-modal-close-01{
+  border-radius: 50%;
+  border: 1PX solid rgba(255, 255, 255, 0.8);
+  margin-top: 1.5vw;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16PX;
+  padding: 2PX;
+  height: 24PX;
+  width: 24PX;
+  text-align: center;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.analysys-modal-close-01 {
+  background-color: #fff;
+  color: #999;
+  position: absolute;
+  border-color: #fff;
+  right: 1vw;
+  top: 0;
+}
+.analysys-modal-btns {
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  color: #999;
+}
+.analysys-modal-btn {
+  margin-top: 1vh;
+  height: 34PX;
+  background: #f4f4f4;
+  line-height: 34PX;
+  font-size: 14PX;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.analysys-modal-btn-01 {
+  margin-right: 1PX;
+}
