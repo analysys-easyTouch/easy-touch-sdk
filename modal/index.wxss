@@ -49,6 +49,10 @@
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
+/* .analysys-modal-img-container {
+  position: relative;
+  width: 80vh;
+} */
 .analysys-modal-image {
   width: 80vw;
   height: auto;
