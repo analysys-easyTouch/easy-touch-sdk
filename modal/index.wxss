@@ -52,6 +52,7 @@
 .analysys-modal-image {
   width: 80vw;
   height: auto;
+  max-height: 70vh;
 }
 .analysys-modal-close, .analysys-modal-close-01{
   border-radius: 50%;
