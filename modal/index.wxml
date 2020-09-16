@@ -1,17 +1,17 @@
-<cover-view wx:if="{{visible}}" class="analysys-modal-shade">
-  <cover-image wx:if="{{popupData.style === 0}}"  src="{{popupData.picture}}"  style="height: {{ imgHeight }}px; width: {{ imgWidth }}px;" class="analysys-modal-image" data-type="{{0}}" bindload="onImageLoad" bindtap="onImageClick" binderror="onImageError" />
-  <cover-view wx:if="{{popupData.style === 0}}"  class="analysys-modal-close" data-type="{{0}}" bindtap="handleClose">X</cover-view>
-  <cover-view class="analysya-modal-container">
-    <cover-view wx:if="{{popupData.style === 1 || popupData.style === 2}}" class="analysys-modal-bg">
-      <cover-image wx:if="{{popupData.style === 1}}" style="height: {{ imgHeight }}px; width: {{ imgWidth }}px;"  src="{{popupData.picture}}" class="analysys-modal-image" bindload="onImageLoad" bindtap="onImageClick" binderror="onImageError" />
-      <cover-view class="analysys-modal-text" >{{popupData.title.text}}</cover-view>
-      <cover-view class="analysys-modal-content {{popupData.style === 1? 'analysys-modal-content-01':''}}" >{{popupData.content.text}}</cover-view>
-      <cover-view class="analysys-modal-btns">
-        <cover-view bindtap="handleMiddleClick" wx:if="{{popupData.style === 1}}" class="analysys-modal-btn">{{popupData.buttonMiddle.text}}</cover-view>
-        <cover-view bindtap="handleLeftClick" wx:if="{{popupData.style === 2}}" class="analysys-modal-btn analysys-modal-btn-01">{{popupData.buttonLeft.text}}</cover-view>
-        <cover-view bindtap="handleRightClick" wx:if="{{popupData.style === 2}}" class="analysys-modal-btn analysys-modal-btn-02">{{popupData.buttonRight.text}}</cover-view>
-      </cover-view>
+<cover-view wx:if="{{visible}}" class="analysys-modal-shade" catchtap="handleCoverClick">
+    <cover-image wx:if="{{popupData.style === 0}}" data-elm="image" src="{{popupData.picture}}"  style="height: {{ imgHeight }}px; width: {{ imgWidth }}px;" class="analysys-modal-image" data-type="{{0}}" bindload="onImageLoad" bindtap="onImageClick" binderror="onImageError" />
+    <cover-view wx:if="{{popupData.style === 0}}" class="analysys-modal-close" data-type="{{0}}" catchtap="handleClose">X</cover-view>
+    <cover-view class="analysya-modal-container">
+        <cover-view wx:if="{{popupData.style === 1 || popupData.style === 2}}" class="analysys-modal-bg">
+            <cover-image wx:if="{{popupData.style === 1}}" data-elm="image" style="height: {{ imgHeight }}px; width: {{ imgWidth }}px;"  src="{{popupData.picture}}" class="analysys-modal-image" bindload="onImageLoad" bindtap="onImageClick" binderror="onImageError" />
+            <cover-view class="analysys-modal-text" >{{popupData.title.text}}</cover-view>
+            <cover-view class="analysys-modal-content {{popupData.style === 1? 'analysys-modal-content-01':''}}" >{{popupData.content.text}}</cover-view>
+            <cover-view class="analysys-modal-btns">
+                <cover-view bindtap="handleMiddleClick" wx:if="{{popupData.style === 1}}" data-elm="buttonMiddle" class="analysys-modal-btn">{{popupData.buttonMiddle.text}}</cover-view>
+                <cover-view bindtap="handleLeftClick" wx:if="{{popupData.style === 2}}" data-elm="buttonLeft" class="analysys-modal-btn analysys-modal-btn-01">{{popupData.buttonLeft.text}}</cover-view>
+                <cover-view bindtap="handleRightClick" wx:if="{{popupData.style === 2}}" data-elm="buttonRight" class="analysys-modal-btn analysys-modal-btn-02">{{popupData.buttonRight.text}}</cover-view>
+            </cover-view>
+        </cover-view>
+        <cover-view wx:if="{{popupData.style === 1}}" class="analysys-modal-close-01" data-type="{{1}}" catchtap="handleClose">X</cover-view>
     </cover-view>
-    <cover-view wx:if="{{popupData.style === 1}}" class="analysys-modal-close-01" data-type="{{1}}" bindtap="handleClose">X</cover-view>
-  </cover-view>
 </cover-view>
