@@ -21,7 +21,6 @@
   border-radius: 2PX;
   width: 80vw;
   height: auto;
-  /* padding: 2vw 0 0; */
   max-height: 90vh;
   margin: 4vw;
 }
